@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Projects text
+\education{
+As a trilingual speaker, it has always been a passion of mine to connect with people in more ways than one. Discovering programming has enabled me to develop applications that can create such connections between people all over the world. With experience in a range of full stack technologies, I wish to apply my diverse skill set and inquisitive \\ nature to a dynamic team with drive and enthusiasm for creating impactful \\ products.
+}
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Web}\\\textbf{Developer},
+        \textbf{~~JavaScript~~},
+        \textbf{~~~~~~React~~~~~~},
+        \textbf{~~~~Ruby on~~~~}\\\textbf{~~Rails~~},
+        \textbf{~~~~~Redux~~~~~}
+    }
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{ALAN GOLMAN} % Your name
+\cvjobtitle{ Full Stack Web Developer } % Job
+% title/career
+
+\cvlinkedin{/in/alan-golman}
+\cvgithub{alangolm}
+\cvnumberphone{(516) 668 - 8549} % Phone number
+\cvmail{golman.alan@gmail.com} % Email address
+\cvmedium{@golman.alan} % Personal website
+\cvsite{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+ \makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 TECHNICAL PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Technical Projects}
+\begin{flushleft}
+\textbf{WanderList} - \MYhref{https://github.com/alangolm/wanderlist-frontend}{Frontend }|{\MYhref{https://github.com/alangolm/wanderlist-backend}{ Backend}}
+\openup 0em
+\\
+\textit {WanderList is a travel itinerary application designed to organize and simplify users’ vacation planning.}
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Developed application components using React and managed application state with Redux/React-Redux
+    \item Integrated the Mapbox API to allow users to visually see their desired destination locations
+    \item Constructed backend using Ruby on Rails to persist destination information to PostgreSQL database
+    \\
+    \textbf{Technologies}: React, Redux, Mapbox API, Ruby on Rails, Semantic UI React, Material UI
+\end{itemize}
+
+\textbf{LystingsRUs } - {\MYhref{https://github.com/alangolm/lystings-r-us}{Github Repo}}
+\openup 0em
+\\
+\textit {LystingsRUs was created to provide users with reviews of NYC listings to help them better navigate their search for the perfect apartment.}
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Built with Ruby on Rails following MVC design pattern and styled with Bootstrap CSS framework
+    \item Configured authentication and authorization using Rails sessions
+    \item Utilized ‘Mailboxer’ gem to allow for intra-application messaging between users seeking/renting out listings
+    \\
+    \textbf{Technologies}: Ruby on Rails, Bootstrap, Mailboxer, bcrypt
+\end{itemize}
+    
+\textbf{Star Wars Trivia} - \MYhref{https://github.com/alangolm/star-wars-quiz-frontend}{Frontend }|{\MYhref{https://github.com/alangolm/star_wars_quiz_backend}{ Backend}}
+{\href{http://www.localxchange.ca/}{}}
+\openup 0em
+\\
+\textit {Inspired by a passion for the Star Wars franchise, this application tests users’ knowledge of film events, characters, and general facts.}
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Constructed a Single Page Application (SPA) using Vanilla JavaScript and styled using custom CSS
+    \item Configured AJAX fetch requests to external Rails API endpoints
+    \\
+    \textbf{Technologies}: Vanilla JavaScript, Ruby on Rails, Semantic UI
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\noindent\textbox{\textbf{Girls Who Code} - New York, NY \hfill}\textbox{\hfil  \hfil}\textbox{\hfill Jan 2019 - Present}
+\\
+\MYhref{https://girlswhocode.com/}{Facilitator and Instructor}
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Lead instruction and maintain an exciting and engaging learning environment for a highly diverse group of 10 high school girls
+    \item Manage and assess students’ proficiency of fundamental computer science skills
+    \item Design and develop club website to allow for student members to share personal projects throughout the semester
+    \item Organize and help facilitate inaugural hackathon for local middle and high school students 
+\end{itemize}
+
+\noindent\textbox{\textbf{The Flatiron School} - New York, NY \hfill}\textbox{\hfil  \hfil}\textbox{\hfill June 2018 - Oct 2018}
+\\
+\MYhref{https://flatironschool.com/career-courses/coding-bootcamp}{Immersive Software Engineering Bootcamp in NYC}
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item An immersive 15 week bootcamp program equipping students with the technical skills necessary to launch careers in web development
+\end{itemize}
+
+\noindent\textbox{\textbf{SentosaCare LLC} - New York, NY \hfill}\textbox{\hfil  \hfil}\textbox{\hfill June 2017 - Aug 2017}
+\\
+{\MYhref{http://www.sentosacarellc.com/}{Intern to Corporate Director of Rehabilitation}}
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Created and maintained Excel database using over 7,000 patient records from 45 rehab centers across NY, PA, and KY to determine Medicare/Medicaid reimbursement rates for each facility 
+    \item Developed monthly report of Medicare/Medicaid reimbursement rates by facility for management to allocate budgets appropriately
+\end{itemize}
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+%	 Education
+%----------------------------------------------------------------------------------------
+\section{Education}
+\noindent\textbox{\textbf{University at Buffalo} - Buffalo, NY \hfill}\textbox{\hfil  \hfil}\textbox{\hfill Aug 2013 - May 2018}
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Bachelor of Arts in Speech and Hearing Science
+    \item Bachelor of Arts in Spanish
+\end{itemize}
+
+\textbf{AWS Certified - Cloud Practitioner}
+\end{document} 
+
